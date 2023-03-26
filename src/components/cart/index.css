@@ -1,0 +1,143 @@
+.Cart {
+  width: 300px;
+  height: 320px;
+  background-color: white;
+  border: 1px solid rgb(219, 219, 219);
+  position: fixed;
+  top: 100px;
+  right: 0px;
+  padding: 10px 10px;
+  overflow-x: calc(20deg);
+  overflow-y: scroll;
+  z-index: 1;
+}
+
+.cart_content {
+  width: 100%;
+  height: 50px;
+  border-bottom: 1px solid rgb(227, 227, 227);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.cart_content .cart-image {
+  width: 30px;
+  height: 30px;
+  border-radius: 12px;
+}
+
+.cart_content .cart-title {
+  font-size: 18px;
+}
+
+.cart_content .cart-price {
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.cart_content .cart-botton {
+  font-size: 20px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.cart-botton:hover {
+  transform: scale(1.4);
+  transition: all 0.3s ease;
+}
+
+.cart-down__content {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 20px;
+  padding: 20px 20px;
+}
+
+.cart-down__content .clear-button {
+  width: 100px;
+  height: 30px;
+  font-weight: 700;
+  background-color: transparent;
+  border: 1px solid rgb(212, 212, 212);
+  cursor: pointer;
+}
+
+.cart-down__content .total {
+  font-size: 16px;
+}
+
+.clear-button:hover {
+  border: 1px solid rgb(51, 51, 51);
+}
+
+.clear-button:active {
+  border: 1px solid rgb(195, 195, 195);
+  color: rgb(195, 195, 195);
+}
+
+.empty-cart {
+  width: 200px;
+  height: 200px;
+  border: 1px solid rgb(222, 222, 222);
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 20px 0;
+  margin: 25px auto;
+}
+
+.empty-cart .empty-cart__text {
+  font-size: 18px;
+  text-align: center;
+}
+
+.empty-cart .empty-cart__button {
+  width: 100px;
+  height: 30px;
+  font-weight: 700;
+  background-color: rgb(71, 117, 242);
+  color: white;
+  border: 0;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.empty-cart__button:hover {
+  background-color: rgb(52, 105, 250);
+}
+
+.empty-cart__button:active {
+  color: rgb(195, 195, 195);
+}
+
+@media screen and (min-width: 768px) {
+  .Cart {
+    width: 400px;
+    height: 500px;
+  }
+
+  .cart_content {
+    width: 100%;
+    height: 85px;
+    border-bottom: 1px solid rgb(227, 227, 227);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .cart_content .cart-image {
+    width: 60px;
+    height: 60px;
+    border-radius: 12px;
+  }
+
+  .empty-cart {
+    width: 300px;
+    height: 200px;
+  }
+}

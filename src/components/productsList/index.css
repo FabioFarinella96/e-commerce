@@ -1,0 +1,42 @@
+.ProductsList {
+  width: 100%;
+  padding: 10px;
+  margin: 20px 0;
+}
+
+.productsList__items {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding: 25px 20px;
+}
+
+.productsList__title {
+  color: rgb(30, 30, 30);
+  margin: 0 0 10px 10px;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 1px;
+  height: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #e8e8e8;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #cfcece;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #bababa;
+}
